@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Frontend User Profile & Registration extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_frontenduserprofile_domain_model_frontenduser">Frontenduser</label>
+			<label index="tx_frontenduserprofile_domain_model_frontenduser.forms">forms</label>
+			<label index="tx_frontenduserprofile_domain_model_feuserfields">FeUserFields</label>
+			<label index="tx_frontenduserprofile_domain_model_feuserfields.title">title</label>
+			<label index="tx_frontenduserprofile_domain_model_feuserfields.type">type</label>
+			<label index="tx_frontenduserprofile_domain_model_feuserfields.required">required</label>
+			<label index="tx_frontenduserprofile_domain_model_feuserfields.min">min</label>
+			<label index="tx_frontenduserprofile_domain_model_feuserfields.max">max</label>
+			<label index="tx_frontenduserprofile_domain_model_form">Form</label>
+			<label index="tx_frontenduserprofile_domain_model_form.title">title</label>
+			<label index="tx_frontenduserprofile_domain_model_form.fields">fields</label>
+			<label index="tx_frontenduserprofile_domain_model_page">Page</label>
+			<label index="tx_frontenduserprofile_domain_model_page.forms">forms</label>
+		</languageKey>
+	</data>
+</T3locallang>

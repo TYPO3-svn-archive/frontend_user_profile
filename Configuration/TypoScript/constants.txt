@@ -1,0 +1,14 @@
+plugin.tx_frontenduserprofile {
+	view {
+		# cat=plugin.tx_frontenduserprofile/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:frontend_user_profile/Resources/Private/Templates/
+		# cat=plugin.tx_frontenduserprofile/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:frontend_user_profile/Resources/Private/Partials/
+		# cat=plugin.tx_frontenduserprofile/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:frontend_user_profile/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_frontenduserprofile//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

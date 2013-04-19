@@ -1,0 +1,27 @@
+config.tx_extbase{
+    persistence{
+        classes{
+
+            Tx_Extbase_Domain_Model_FrontendUser {
+                subclasses {
+                    Tx_FrontendUserProfile_Frontenduser = Tx_FrontendUserProfile_Domain_Model_Frontenduser
+					
+          		}
+            }
+            Tx_FrontendUserProfile_Domain_Model_Frontenduser {
+                mapping {
+                    tableName = fe_users
+                    recordType = Tx_FrontendUserProfile_Frontenduser
+                }
+            }
+            
+            Tx_FrontendUserProfile_Domain_Model_Page {
+                mapping {
+                    tableName = tt_content
+                    recordType = Tx_FrontendUserProfile_Page
+                }
+            }
+            
+    	}
+    }
+}

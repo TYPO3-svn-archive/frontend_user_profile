@@ -1,0 +1,39 @@
+plugin.tx_frontenduserprofile {
+	view {
+		templateRootPath = {$plugin.tx_frontenduserprofile.view.templateRootPath}
+		partialRootPath = {$plugin.tx_frontenduserprofile.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_frontenduserprofile.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_frontenduserprofile.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_frontenduserprofile._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-frontend-user-profile table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-frontend-user-profile table th {
+		font-weight:bold;
+	}
+
+	.tx-frontend-user-profile table td {
+		vertical-align:top;
+	}
+)
