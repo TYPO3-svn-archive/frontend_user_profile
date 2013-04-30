@@ -30,17 +30,18 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_FrontendUserProfile_Domain_Model_FeUserFields extends Tx_Extbase_DomainObject_AbstractValueObject {
+class Tx_FrontendUserProfile_Domain_Model_Field extends Tx_Extbase_DomainObject_AbstractEntity {
 
 	/**
-	 * title
+	 * Title des Eingabefeldes
 	 *
 	 * @var string
+	 * @validate NotEmpty
 	 */
 	protected $title;
 
 	/**
-	 * type
+	 * Wähle einen Type aus der Liste
 	 *
 	 * @var integer
 	 * @validate NotEmpty
@@ -48,23 +49,23 @@ class Tx_FrontendUserProfile_Domain_Model_FeUserFields extends Tx_Extbase_Domain
 	protected $type;
 
 	/**
-	 * required
+	 * Muss das Feld ausgefüllt werden?
 	 *
 	 * @var boolean
 	 */
 	protected $required = FALSE;
 
 	/**
-	 * min
+	 * Mindeste Zeichenanzahll
 	 *
-	 * @var integer
+	 * @var float
 	 */
 	protected $min;
 
 	/**
-	 * max
+	 * Maximale Zeichenanzahl
 	 *
-	 * @var integer
+	 * @var float
 	 */
 	protected $max;
 
@@ -137,7 +138,7 @@ class Tx_FrontendUserProfile_Domain_Model_FeUserFields extends Tx_Extbase_Domain
 	/**
 	 * Returns the min
 	 *
-	 * @return integer $min
+	 * @return float $min
 	 */
 	public function getMin() {
 		return $this->min;
@@ -146,7 +147,7 @@ class Tx_FrontendUserProfile_Domain_Model_FeUserFields extends Tx_Extbase_Domain
 	/**
 	 * Sets the min
 	 *
-	 * @param integer $min
+	 * @param float $min
 	 * @return void
 	 */
 	public function setMin($min) {
@@ -156,7 +157,7 @@ class Tx_FrontendUserProfile_Domain_Model_FeUserFields extends Tx_Extbase_Domain
 	/**
 	 * Returns the max
 	 *
-	 * @return integer $max
+	 * @return float $max
 	 */
 	public function getMax() {
 		return $this->max;
@@ -165,7 +166,7 @@ class Tx_FrontendUserProfile_Domain_Model_FeUserFields extends Tx_Extbase_Domain
 	/**
 	 * Sets the max
 	 *
-	 * @param integer $max
+	 * @param float $max
 	 * @return void
 	 */
 	public function setMax($max) {

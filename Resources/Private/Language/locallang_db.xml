@@ -7,30 +7,21 @@
 	<data type="array">
 		<languageKey index="default" type="array">
             
-			<label index="tx_frontenduserprofile_domain_model_frontenduser">Frontenduser</label>
-			<label index="tx_frontenduserprofile_domain_model_frontenduser.forms">Forms</label>
-			<label index="fe_users.tx_extbase_type.Tx_FrontendUserProfile_Frontenduser">Frontend User Profile and Registration Frontenduser</label>
-			
-			<label index="tx_frontenduserprofile_domain_model_feuserfields">Form Fields</label>
-			<label index="tx_frontenduserprofile_domain_model_form">User Form</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields.title">Title</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields.type">Type</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields.required">Required</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields.min">Min</label>
-            <label index="tx_frontenduserprofile_domain_model_feuserfields.max">Max</label>
+			<label index="tx_frontenduserprofile_domain_model_form">Form</label>
 			<label index="tx_frontenduserprofile_domain_model_form.title">Title</label>
 			<label index="tx_frontenduserprofile_domain_model_form.fields">Fields</label>
-            <label index="tx_frontenduserprofile_domain_model_feuserfields.text">Text</label>
-            <label index="tx_frontenduserprofile_domain_model_feuserfields.zahl">Zahl</label>
-            <label index="tx_frontenduserprofile_domain_model_feuserfields.e-mail">E-Mail</label>
 
-            <label index="tx_frontenduserprofile_flexform.title">Formular einbinden</label>
-            <label index="tx_frontenduserprofile_flexform.addform">Formular auswählen</label>
+			<label index="tx_frontenduserprofile_domain_model_field">Field</label>
+			<label index="tx_frontenduserprofile_domain_model_field.title">Title</label>
+			<label index="tx_frontenduserprofile_domain_model_field.type">Type</label>
+			<label index="tx_frontenduserprofile_domain_model_field.required">Required</label>
+			<label index="tx_frontenduserprofile_domain_model_field.min">Min</label>
+			<label index="tx_frontenduserprofile_domain_model_field.max">Max</label>
 
-			<label index="tx_frontenduserprofile_domain_model_page">Page</label>
-			<label index="tx_frontenduserprofile_domain_model_page.forms">Forms</label>
-			<label index="tt_content.tx_extbase_type.Tx_FrontendUserProfile_Page">Frontend User Profile and Registration Page</label>
-			
+            <label index="tx_frontenduserprofile_domain_model_field.text">Text</label>
+            <label index="tx_frontenduserprofile_domain_model_field.zahl">Zahl</label>
+            <label index="tx_frontenduserprofile_domain_model_field.e-mail">E-Mail</label>
+
 		</languageKey>
 	</data>
 </T3locallang>

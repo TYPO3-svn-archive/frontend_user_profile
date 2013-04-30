@@ -4,7 +4,17 @@
 			<f:translate key="tx_frontenduserprofile_domain_model_form.title" />
 		</td>
 		<td>
-			{form.title}
+            <f:form method="get" action="save">
+
+            <h2>{form.title}</h2>
+
+            <f:for each="{form.fields}" as="fo" iteration="objIterator">
+			  {fo.title}
+                <f:form.textfield name="tx_inputfield" /><br>
+                </f:for>
+
+                <f:form.submit value="Such90n" />
+            </f:form>
 		</td>
 	</tr>
 </table>

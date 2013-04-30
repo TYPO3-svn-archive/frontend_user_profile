@@ -2,23 +2,19 @@
 <T3locallang>
 	<meta type="array">
 		<type>module</type>
-		<description>Language labels for the Frontend User Profile & Registration extension in the FRONTEND</description>
+		<description>Language labels for the Frontend User Profile and Regestration extension in the FRONTEND</description>
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="tx_frontenduserprofile_domain_model_frontenduser">Frontenduser</label>
-			<label index="tx_frontenduserprofile_domain_model_frontenduser.forms">forms</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields">FeUserFields</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields.title">title</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields.type">type</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields.required">required</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields.min">min</label>
-			<label index="tx_frontenduserprofile_domain_model_feuserfields.max">max</label>
 			<label index="tx_frontenduserprofile_domain_model_form">Form</label>
-			<label index="tx_frontenduserprofile_domain_model_form.title">title</label>
-			<label index="tx_frontenduserprofile_domain_model_form.fields">fields</label>
-			<label index="tx_frontenduserprofile_domain_model_page">Page</label>
-			<label index="tx_frontenduserprofile_domain_model_page.forms">forms</label>
+			<label index="tx_frontenduserprofile_domain_model_form.title">Title des Forms</label>
+			<label index="tx_frontenduserprofile_domain_model_form.fields">Alle Felder diesen Formulars</label>
+			<label index="tx_frontenduserprofile_domain_model_field">Field</label>
+			<label index="tx_frontenduserprofile_domain_model_field.title">Title des Eingabefeldes</label>
+			<label index="tx_frontenduserprofile_domain_model_field.type">Wähle einen Type aus der Liste</label>
+			<label index="tx_frontenduserprofile_domain_model_field.required">Muss das Feld ausgefüllt werden?</label>
+			<label index="tx_frontenduserprofile_domain_model_field.min">Mindeste Zeichenanzahll</label>
+			<label index="tx_frontenduserprofile_domain_model_field.max">Maximale Zeichenanzahl</label>
 		</languageKey>
 	</data>
 </T3locallang>

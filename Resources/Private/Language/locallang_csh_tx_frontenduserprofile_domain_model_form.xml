@@ -8,8 +8,8 @@
 	<data type="array">
 	<languageKey index="default" type="array">
 	   
-			<label index="title.description">title</label>
-			<label index="fields.description">fields</label>
+			<label index="title.description">Title des Forms</label>
+			<label index="fields.description">Alle Felder diesen Formulars</label>
 		</languageKey>
 	</data>
 </T3locallang>

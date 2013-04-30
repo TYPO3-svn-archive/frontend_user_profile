@@ -30,24 +30,36 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_FrontendUserProfile_Controller_PageController extends Tx_Extbase_MVC_Controller_ActionController {
+class Tx_FrontendUserProfile_Domain_Repository_FormRepository extends Tx_Extbase_Persistence_Repository {
 
-	/**
-	 * pageRepository
-	 *
-	 * @var Tx_FrontendUserProfile_Domain_Repository_PageRepository
-	 */
-	protected $pageRepository;
+    /**
+     * @see http://api.typo3.org/typo3cms/47/html/class_tx___extbase___persistence___typo3_query_settings.html
+     */
+    public function __construct() {
+        parent::__construct();
 
-	/**
-	 * injectPageRepository
-	 *
-	 * @param Tx_FrontendUserProfile_Domain_Repository_PageRepository $pageRepository
-	 * @return void
-	 */
-	public function injectPageRepository(Tx_FrontendUserProfile_Domain_Repository_PageRepository $pageRepository) {
-		$this->pageRepository = $pageRepository;
-	}
+        /** @var $newDefaultQuerySettings Tx_Extbase_Persistence_Typo3QuerySettings */
+        $newDefaultQuerySettings = t3lib_div::makeInstance('Tx_Extbase_Persistence_Typo3QuerySettings');
+        $newDefaultQuerySettings->setRespectStoragePage(FALSE);
+        $this->setDefaultQuerySettings($newDefaultQuerySettings);
+    }
+    /**
+     * @param int $id
+     */
+    public function findByID($id) {
+        $query = $this->createQuery();
 
+        $query->matching(
+
+            $query->
+                equals('uid', '1')
+
+        );
+
+
+        $result = $query->execute();
+
+        return $result;
+    }
 }
 ?>

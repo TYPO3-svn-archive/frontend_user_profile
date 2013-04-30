@@ -31,7 +31,7 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  * @package TYPO3
- * @subpackage Frontend User Profile & Registration
+ * @subpackage Frontend User Profile and Regestration
  *
  */
 class Tx_Frontend_user_profile_Controller_FormControllerTest extends Tx_Extbase_Tests_Unit_BaseTestCase {

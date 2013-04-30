@@ -33,14 +33,44 @@
 class Tx_FrontendUserProfile_Controller_FormController extends Tx_Extbase_MVC_Controller_ActionController {
 
 	/**
-	 * action show
+	 * formRepository
 	 *
-	 * @param Tx_FrontendUserProfile_Domain_Model_Form $form
+	 * @var Tx_FrontendUserProfile_Domain_Repository_FormRepository
+	 */
+	protected $formRepository;
+
+	/**
+	 * injectFormRepository
+	 *
+	 * @param Tx_FrontendUserProfile_Domain_Repository_FormRepository $formRepository
 	 * @return void
 	 */
-	public function showAction(Tx_FrontendUserProfile_Domain_Model_Form $form) {
-		$this->view->assign('form', $form);
+	public function injectFormRepository(Tx_FrontendUserProfile_Domain_Repository_FormRepository $formRepository) {
+		$this->formRepository = $formRepository;
 	}
+
+
+    /**
+     * @param Tx_FrontendUserProfile_Domain_Model_Form $form
+     */
+    public function showAction(Tx_FrontendUserProfile_Domain_Model_Form $form = NULL) {
+        $forms = ($this->formRepository->findByUid($this->settings['forms']));
+        $this->view->assign('form', $forms);
+    }
+
+    /**
+     * @param string $tx_inputfield
+    **/
+    public function saveAction($tx_inputfield=NULL)
+    {
+        var_dump($this->request->getArgument('tx_inputfield') );
+
+        $this->view->assign('form', $tx_inputfield);
+      //  $arr[] = unserialize($_POST['arr']);
+     //   echo(time());
+    //    var_dump($_GET['arr_'.'*']);
+
+    }
 
 	/**
 	 * action

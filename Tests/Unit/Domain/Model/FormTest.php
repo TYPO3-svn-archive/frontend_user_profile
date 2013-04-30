@@ -31,7 +31,7 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  * @package TYPO3
- * @subpackage Frontend User Profile & Registration
+ * @subpackage Frontend User Profile and Regestration
  *
  */
 class Tx_FrontendUserProfile_Domain_Model_FormTest extends Tx_Extbase_Tests_Unit_BaseTestCase {
@@ -68,7 +68,7 @@ class Tx_FrontendUserProfile_Domain_Model_FormTest extends Tx_Extbase_Tests_Unit
 	/**
 	 * @test
 	 */
-	public function getFieldsReturnsInitialValueForObjectStorageContainingTx_FrontendUserProfile_Domain_Model_FeUserFields() { 
+	public function getFieldsReturnsInitialValueForObjectStorageContainingTx_FrontendUserProfile_Domain_Model_Field() { 
 		$newObjectStorage = new Tx_Extbase_Persistence_ObjectStorage();
 		$this->assertEquals(
 			$newObjectStorage,
@@ -79,8 +79,8 @@ class Tx_FrontendUserProfile_Domain_Model_FormTest extends Tx_Extbase_Tests_Unit
 	/**
 	 * @test
 	 */
-	public function setFieldsForObjectStorageContainingTx_FrontendUserProfile_Domain_Model_FeUserFieldsSetsFields() { 
-		$field = new Tx_FrontendUserProfile_Domain_Model_FeUserFields();
+	public function setFieldsForObjectStorageContainingTx_FrontendUserProfile_Domain_Model_FieldSetsFields() { 
+		$field = new Tx_FrontendUserProfile_Domain_Model_Field();
 		$objectStorageHoldingExactlyOneFields = new Tx_Extbase_Persistence_ObjectStorage();
 		$objectStorageHoldingExactlyOneFields->attach($field);
 		$this->fixture->setFields($objectStorageHoldingExactlyOneFields);
@@ -95,7 +95,7 @@ class Tx_FrontendUserProfile_Domain_Model_FormTest extends Tx_Extbase_Tests_Unit
 	 * @test
 	 */
 	public function addFieldToObjectStorageHoldingFields() {
-		$field = new Tx_FrontendUserProfile_Domain_Model_FeUserFields();
+		$field = new Tx_FrontendUserProfile_Domain_Model_Field();
 		$objectStorageHoldingExactlyOneField = new Tx_Extbase_Persistence_ObjectStorage();
 		$objectStorageHoldingExactlyOneField->attach($field);
 		$this->fixture->addField($field);
@@ -110,7 +110,7 @@ class Tx_FrontendUserProfile_Domain_Model_FormTest extends Tx_Extbase_Tests_Unit
 	 * @test
 	 */
 	public function removeFieldFromObjectStorageHoldingFields() {
-		$field = new Tx_FrontendUserProfile_Domain_Model_FeUserFields();
+		$field = new Tx_FrontendUserProfile_Domain_Model_Field();
 		$localObjectStorage = new Tx_Extbase_Persistence_ObjectStorage();
 		$localObjectStorage->attach($field);
 		$localObjectStorage->detach($field);

@@ -33,17 +33,16 @@
 class Tx_FrontendUserProfile_Domain_Model_Form extends Tx_Extbase_DomainObject_AbstractEntity {
 
 	/**
-	 * title
+	 * Title des Forms
 	 *
 	 * @var string
-	 * @validate NotEmpty
 	 */
 	protected $title;
 
 	/**
-	 * fields
+	 * Alle Felder diesen Formulars
 	 *
-	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_FrontendUserProfile_Domain_Model_FeUserFields>
+	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_FrontendUserProfile_Domain_Model_Field>
 	 */
 	protected $fields;
 
@@ -91,38 +90,39 @@ class Tx_FrontendUserProfile_Domain_Model_Form extends Tx_Extbase_DomainObject_A
 	}
 
 	/**
-	 * Adds a FeUserFields
+	 * Adds a Field
 	 *
-	 * @param Tx_FrontendUserProfile_Domain_Model_FeUserFields $field
+	 * @param Tx_FrontendUserProfile_Domain_Model_Field $field
 	 * @return void
 	 */
-	public function addField(Tx_FrontendUserProfile_Domain_Model_FeUserFields $field) {
+	public function addField(Tx_FrontendUserProfile_Domain_Model_Field $field) {
 		$this->fields->attach($field);
 	}
 
 	/**
-	 * Removes a FeUserFields
+	 * Removes a Field
 	 *
-	 * @param Tx_FrontendUserProfile_Domain_Model_FeUserFields $fieldToRemove The FeUserFields to be removed
+	 * @param Tx_FrontendUserProfile_Domain_Model_Field $fieldToRemove The Field to be removed
 	 * @return void
 	 */
-	public function removeField(Tx_FrontendUserProfile_Domain_Model_FeUserFields $fieldToRemove) {
+	public function removeField(Tx_FrontendUserProfile_Domain_Model_Field $fieldToRemove) {
 		$this->fields->detach($fieldToRemove);
 	}
 
 	/**
 	 * Returns the fields
 	 *
-	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_FrontendUserProfile_Domain_Model_FeUserFields> $fields
+	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_FrontendUserProfile_Domain_Model_Field> $fields
 	 */
 	public function getFields() {
+      //  var_dump($this->fields);
 		return $this->fields;
 	}
 
 	/**
 	 * Sets the fields
 	 *
-	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_FrontendUserProfile_Domain_Model_FeUserFields> $fields
+	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_FrontendUserProfile_Domain_Model_Field> $fields
 	 * @return void
 	 */
 	public function setFields(Tx_Extbase_Persistence_ObjectStorage $fields) {
